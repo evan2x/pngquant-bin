@@ -20,6 +20,20 @@ brew install libimagequant
 sudo apt-get install libimagequant-dev
 ```
 
+Compared with the official package, this package supports setting the mirror URL. You can set the download URLs of its binary files in the following two ways:
+
+1. Set the npm config property `imagemin_cdnurl`.
+
+```sh
+npm install pngquant-bin --imagemin_cdnurl=https://npmmirror.com/mirrors
+```
+
+2. Set the environment variables.
+
+```sh
+IMAGEMIN_CDNURL=https://npmmirror.com/mirrors npm install pngquant-bin
+```
+
 ## Usage
 
 ```js
